@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">SignUp as a Agent on Virtual Hospital</h1>
+    <div class="col-6 offset-3">
+     <form method="POST" action="/signup/agent" class="needs-validation" novalidate>
+        <div class="mb-3">   
+            <label for="username" class="form-lable">Username</label>
+            <input type="text" name="username"
+            id="username"
+            required
+            class="form-control"/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+       <!-- ============ FOR Email ======================== -->
+        <div class="mb-3">   
+            <label for="email" class="form-lable">Email</label>
+            <input type="email" name="email"
+            id="email"
+            required
+            class="form-control"/>
+        </div>
+
+        <div class="mb-3">   
+            <label for="area_id" class="form-lable">Area id</label>
+            <input type="tel" name="area_id"
+            id="area_id"
+            required
+            class="form-control"/>
+        </div>
+        <!-- ============ FOR PASSWORD ==================== -->
+        <div class="mb-3">   
+            <label for="password" class="form-lable">Password</label>
+            <input type="password" name="password"
+            id="password"
+            required
+            class="form-control"/>
+        </div>
+
+        <button class="btn btn-success mb-3">SignUp</button>
+     </form>
+    </div>
+</div>

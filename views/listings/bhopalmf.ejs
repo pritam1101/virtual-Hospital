@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate") %> 
+<h2 class="specialist_container">Hear Your medical Facilitator in Bhopal </h2>
+<hr>
+  <div class="cards">
+    <%   for(listing of allListings) { %>
+      <div class="card" style="width: 18rem;">
+          <img src="<%= listing.image.url %>" class="card-img-top" alt="doctor_image">
+          <div class="card-body">
+            <h5 class="card-title"><%= listing.doctorname %></h5>
+            <p class="card-text"><%= listing.specialist %> <br>
+            </p>
+            <!-- <p class="">Experience: <%= listing.experience %> Years</p> -->
+            <a href="/mfvisit" class="btn btn-primary card_button">More Details</a>
+          </div>
+        </div>
+        <% } %>  
+  </div>
+
+  <!-- <hr>
+  <div class="col-6 offset-3 mb-3">
+      <h3>where you'll be</h3>
+      <div id="map"></div>
+    </div>
+    <script>
+      const mapToken = "<%=process.env.MAP_TOKEN %>";
+      const listing = <%- JSON.stringify(listing) %>;
+  </script>
+
+<script src="/js/map.js"></script> -->

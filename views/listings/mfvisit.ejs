@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplate") %> 
+<div class="mf_visit">
+   <h4>Medical Facilitator</h4>
+    <img src="<%= listing.image.url %>" alt="mf image">
+   <p> MF Name: <%= listing.doctorname %> <br> </p>
+    <p>Location :  <%= listing.location %> <br> </p>
+    <p>Mobile No: <%= listing.mobile_no %> </p>
+</div>
+
+<hr>
+    <div class="col-6 offset-3 mb-3">
+        <h3>where you'll be</h3>
+        <div id="map"></div>
+      </div>
+      <script>
+        const mapToken = "<%=process.env.MAP_TOKEN %>";
+        const listing = <%- JSON.stringify(listing) %>;
+    </script>
+
+  <script src="/js/map.js"></script>

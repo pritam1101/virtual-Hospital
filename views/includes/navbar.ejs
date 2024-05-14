@@ -1,0 +1,119 @@
+<!-- <h1>This is navbar</h1>
+<form method="GET" action="/listings/new">
+    <button>Add New Doctor</button>
+</form> -->
+<!-- ============================ HEADER ============================ -->
+<header class="header">
+    <!-- ============================ Navigation ============================ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- ============================ NAV - LOGO ============================ -->
+            <a class="navbar-brand" href="/"><img src="/images/nav_logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">                      
+                    <!-- ============================ NAV - LOCATION ============================ -->
+                    <li class="nav-item">
+                        <a href="#">
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot location_icon"></i>
+                                <div class="location1">
+                                    <p>Your location</p>
+                                    <select name="list" class="search-select">
+                                        <option>Bhopal</option>
+                                        <a href="#"><option value="stu">Indore</option></a>
+                                        <a href="#"><option value="stu">Vidisha</option></a>
+                                        <a href="#"><option value="stu">Beena</option></a>
+                                        <a href="#"><option value="stu">Sagar</option></a>
+                                        <a href="#"><option value="stu">Sehore</option></a>
+                                    </select>                
+                                </div>
+                            </div>
+                        </a>                   
+                    </li> 
+                    <!-- ============================ NAV - LOGIN/Sign-up ============================ -->
+                    <li class="nav-item">
+                    <a href="/login">
+                        <div class="login_container">
+                            <% if(!currUser){%>
+                            <i class="fa-solid fa-user user_icon"></i>
+                            <span class="login_signup">
+                                <a href="/login">Login/</a>
+                                <a href="/signup/both">Sign-up</a>
+                            </span>
+                            <%} %>
+                        </div>    
+                    </a>
+                    </li>
+                    <!-- ============================ NAV - Contact ============================ -->
+                    <li class="nav-item">
+                    <% if(currUser){%>
+                    <a href="/myaccount">
+                        <div class="login_container Contact">
+                            <i class="fa-solid fa-user Contact_icon"></i>
+                            <div class="Contact1">
+                                <p>MyAccount</p>
+                            </div>
+                        </div>    
+                    </a>
+                    <% } %>
+                    </li>
+                    <!-- ================ for logout ========== -->
+                    <li class="nav-item">
+                    <% if(currUser){%>
+                    <a href="/logout">
+                        <div class="login_container log-out">
+                            <i class="fa-solid fa-right-from-bracket Contact_icon"></i>
+                            <div class="Contact1">
+                                <p>logout</p>
+                            </div>
+                        </div>    
+                    </a>
+                    <% } %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="google_translate_element" class="lang_change"></div>
+</header>
+
+<!-- ================================ Options ================================= -->
+<div class="panel">
+    <div class="nav-panel">
+        <a class="home_icon" href="/"><i class="fa-solid fa-house-chimney panel_house-icon"></i></a>
+        <ul class="panel_button">
+            <li><a href="#" class="panel_list">Emergency Services<i class="fa-solid fa-angle-down panel_list-icon"></i></a>
+                <ul>
+                    <li><a href="/women">Women</a></li>
+                    <li><a href="/child">Child</a></li>
+                    <li><a href="#">Senior Citizen</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="panel_list">Search Medical facilitator<i class="fa-solid fa-angle-down panel_list-icon"></i></a>
+                <ul>
+                    <li><a href="/bhopalmf">bhopal</a></li>
+                    <li><a href="#">Phanda</a></li>
+                    <li><a href="#">neelbad</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="panel_list">Supplement<i class="fa-solid fa-angle-down panel_list-icon"></i></a>
+                <ul>
+                    <li><a href="#">Behaviour health</a></li>
+                    <li><a href="#">Behaviour health</a></li>
+                    <li><a href="#">Behaviour health</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="panel_list">Patient <i class="fa-solid fa-angle-down panel_list-icon"></i></a>
+                <ul>
+                    <li><a href="/searchSym">Search Your Symptoms</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="panel_list">Helpdesk</a></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerplate") %> 
+<div class="specialist_container ">
+  <h1>All Doctors Lists</h1>
+  <div class="search_box all_searchbox">
+    <form action="/search" method="GET"  class="search_input ">
+        <input type="text" id="search" name="key" class="input" placeholder="Enter search query" 
+        required
+        />
+        <button type="submit" class="search_button">Search</button>
+
+    </form>
+   
+<!-- </form> -->
+</div>
+  <form  method="GET" action="/listings/new" ">
+          <button class="contact">Add New Doctor</button>
+  </form>
+</div>
+<body>
+  <div class="cards">
+    <%   for(listing of allListings) { %>
+      <div class="card" style="width: 18rem;">
+          <img src="<%= listing.image.url %>" class="card-img-top" alt="doctor_image">
+          <div class="card-body">
+            <h5 class="card-title"><%= listing.doctorname %></h5>
+            <p class="card-text"><%= listing.specialist %> <br>
+              Exp :<%= listing.experience %> Yrs
+            </p>
+            <!-- <p class="">Experience: <%= listing.experience %> Years</p> -->
+            <a href="/listings/<%= listing._id %>" class="btn btn-primary card_button">Visit Doctor</a>
+          </div>
+        </div>
+        <% } %>  
+  </div>
+</body>

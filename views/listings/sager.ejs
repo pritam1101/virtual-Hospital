@@ -1,0 +1,19 @@
+<% layout("/layouts/boilerplate") %> 
+<h2 class="specialist_container">Doctors Avilable in Sager Multispecialisty Hospital</h2>
+<hr>
+  <div class="cards">
+    <%   for(listing of allListings) { %>
+      <div class="card" style="width: 18rem;">
+          <img src="<%= listing.image.url %>" class="card-img-top" alt="doctor_image">
+          <div class="card-body">
+            <h5 class="card-title"><%= listing.doctorname %></h5>
+            <p class="card-text"><%= listing.specialist %> <br>
+              Exp :<%= listing.experience %> Yrs
+            </p>
+            <!-- <p class="">Experience: <%= listing.experience %> Years</p> -->
+            <a href="/listings/<%= listing._id %>" class="btn btn-primary card_button">Visit Doctor</a>
+          </div>
+        </div>
+        <% } %>  
+  </div>
+

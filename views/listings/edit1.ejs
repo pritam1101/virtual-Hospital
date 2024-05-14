@@ -1,0 +1,116 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <h3>Edit your Listing</h3>
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" 
+       novalidate class="needs-validation" enctype="multipart/form-data">
+  <!-- ==================== FOR Name =============================== -->
+      <div class="mb-3">
+        <label for="doctorname" class="form-lable">Name</label>
+        <input name="listing[doctorname]" value="<%= listing.doctorname %>" type="text" required
+        class="form-control"/>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+  <!-- ==================== FOR Specialist  =============================== -->
+  <div class="row">
+  <div class="mb-3">
+    <label for="specialist" class="form-lable">Specialist</label>
+    <input name="listing[specialist]" value="<%= listing.specialist %>" type="text" required
+    class="form-control"/>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="mb-3 col-md-8">
+    <label for="mobile_no" class="form-lable">Mobile No.</label>
+    <input type="number" value="<%= listing.mobile_no %>" name="listing[mobile_no]" required
+    class="form-control" 
+     required
+    />
+    <div class="invalid-feedback">
+      Please enter your mobile number
+    </div>
+  </div>
+</div>
+  <!-- ==================== FOR IMAGES =============================== -->
+  <div class="mb-3 ">
+    Previous image <br>
+     <img src="<%= listing.image.url %>" class="edit_img" alt=""/>
+  </div>
+      <div class="mb-3">
+        <label for="image" class="form-lable">Upload Image</label>
+        <input name="listing[image]"  type="file" 
+         class="form-control"/>
+      </div>
+  <!-- ==================== FOR Experience AND COUNTRY  =============================== -->
+      <div class="row">
+        
+      <div class="mb-3 col-md-4">
+        <label for="experience" class="form-lable">Experience</label>
+        <input name="listing[experience]" value="<%= listing.experience %>" type="number" required
+        class="form-control"/>
+        <div class="invalid-feedback"> 
+          Please Enter Your Experience
+        </div>
+      </div> 
+      <!-- ==================== FOR LOCATION =============================== -->
+      <div class="mb-3">
+        <label for="location" class="form-lable">Location</label>
+      <input name="listing[location]" value="<%= listing.location %>" type="text" required
+       class="form-control"/>
+       <div class="invalid-feedback"> 
+        Location should be valid.
+      </div>
+    </div>
+    </div>
+  
+    <div class="row">
+        <!-- =================== FOR State ================================= -->
+        <div class="mb-3 col-md-4">
+           <label for="state" class="form-lable">State</label>
+           <input type="text"  name="listing[state]" value="<%= listing.state %>"   required 
+           class="form-control" />
+           <div class="invalid-feedback"> 
+             State should be valid.
+           </div>
+       </div>
+            <!-- =================== FOR COUNTRY ================================= -->
+            <div class="mb-3 col-md-8">
+               <label for="country" class="form-lable">Country</label>
+               <input type="text"  name="listing[country]" value="<%= listing.country %>" required 
+               class="form-control" />
+               <div class="invalid-feedback"> 
+                 Country should be valid.
+               </div>
+           </div>
+         </div>
+
+      <button class="btn btn-dark edit-btn mt-3 mb-3">Edit</button>
+    </form>
+  </div>
+</div>
+<script src="/js/script.js"></script>
+
+
+<!-- <body>
+    <h1>Edit Your Listing</h1>
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
+       <input name="listing[doctorname]"  value="<%= listing.doctorname %>" type="text">
+       <br><br>
+       <input name="listing[specialist]" value="<%= listing.specialist %>" type="text">
+       <br><br>
+       <input name="listing[image]" value="<%= listing.image %>" >
+       <br><br>
+       <input name="listing[experience]" value="<%= listing.experience %>" type="number">
+       <br><br>
+       <input name="listing[state]" value="<%= listing.state %>" type="text">
+       <br><br>
+       <input name="listing[location]" value="<%= listing.location %>" type="text">
+       <br><br>
+       <input name="listing[country]" value="<%= listing.country %>" type="text">
+       <br> <br>
+       <button>Edit</button>
+    </form>
+</body> -->

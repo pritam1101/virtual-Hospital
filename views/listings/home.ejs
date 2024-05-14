@@ -1,0 +1,189 @@
+<% layout("/layouts/boilerplate") %> 
+<body>
+        <!-- <h1>This is a Home Page</h1>
+    <a href="/listing">General Physician</a>
+    <br>
+    <a href="/listing/one">Dermatology</a>
+    <br>
+    <a href="/listing/two">Gastroenterology</a>
+    <br>
+    <a href="/listing/three">Cardiology</a> -->
+</body>
+<section>
+    <div class="first_section">
+        <div class="hero-section">
+            <div class="hero_section-detail">
+                <div class="heading_detail">
+                    <h1>Health Catalyst</h1>
+                    <h3 class="sub_heading">Virtual Hospital</h3>
+                </div>
+                <div class="search_box">
+                    <form action="/search" method="GET"  class="search_input ">
+                        <input type="text" id="search" name="key" class="input" placeholder="Enter search query" 
+                        required
+                        />
+                        <button type="submit" class="search_button">Search</button>
+
+                    </form>
+                   
+                <!-- </form> -->
+                </div>
+                <div class="contact_section">
+                    <form  method="GET" action="/listings/new" ">
+                            <button class="contact">Add New Doctor</button>
+                    </form>
+                    <!-- <a href="#"><div class="contact"></div></a> -->
+                    <a href="/medicalfac"><div class="services">Add New MF</div></a>
+                </div>
+            </div>
+            <div class="hero_section-img">
+                <img src="/images/imagesTrayel/imagesTrayel/doctor2.png" alt="Doctor img">
+            </div>
+        </div>
+    </div>       
+</section>
+
+<!-- ============================ Doctor Cards ============================ -->
+
+<section>
+    <div class="details_container">
+        <div class="details_content">
+            <h1>Our Doctors</h1>
+        </div>
+        <ul class="profiles_boxes">
+            <a href="/listing/all" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/All\ Doctor.jpg');">
+                <h5>All Doctors</h5>
+            </a>
+
+            <a href="/listing" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img1.png');">
+                <h5>General Physician</h5>
+            </a>
+
+            <a href="/listing/two" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img2.png');">
+                <h5>Gastroenterology</h5>
+            </a>
+
+
+            <a href="/listing/one" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img3.png');">
+                <h5>Dermatology</h5>
+            </a>
+
+            <a href="/listing/three" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img5.png');">
+                <h5>Cardiology</h5>
+            </a>
+
+            <a href="#" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img4.png');">
+                <h5>Diabetology</h5>
+            </a>
+
+            <a href="#" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img6.png');">
+                <h5>Psychiatry</h5>
+            </a>
+
+
+            <a href="#" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img7.png');">
+                <h5>Ayurveda</h5>
+            </a>
+
+
+            <a href="#" class="profile_box" style="background-image: url('/images/imagesTrayel/imagesTrayel/box_img8.png');">
+                <h5>Paediatrician</h5>
+            </a>
+
+            
+        </ul>
+    </div>
+</section>
+<!-- ============================ Hospital Cards ============================ -->
+<section>
+    <div class="hospital_container">
+        <div class="hospital_content">
+            <div class="swiper-slide card">
+                <div class="img_hospital">
+                  <img src="/images/imagesTrayel/imagesTrayel/Sagar_hospital.png" alt="hospital 1 ">
+                </div>
+                <div class="hospital_details">
+                  <h2 class="hospital_name">Sagar Multispacility Hospital</h2>
+                  <div class="hospital_address detail"><i class="fa-solid fa-location-dot cards_icon"></i><p class="address">SMH, Narmadapuram Rd, near Shri Ram Colony, Shri Ram Colony, Bhopal, Madhya Pradesh 462026</p></div>
+                  <div class="hospital_helpline detail"><i class="fa-solid fa-phone cards_icon"></i><p class="helpline_no">0755-4303030</p></div>
+                  <div class="hospital_contact detail"><i class="fa-solid fa-envelope cards_icon"></i><p class="helpline_email">contact@smhbhopal.com</p></div>
+                  <div class="contact_button"><a href="/sagerhos" class="details_button">more details</a></div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="img_hospital">
+                  <img src="/images/imagesTrayel/imagesTrayel/Bansal hospital img " alt="hospital 1 ">
+                </div>
+                <div class="hospital_details">
+                  <h2 class="hospital_name">Bansal Hospital Bhopal</h2>
+                  <div class="hospital_address detail"><i class="fa-solid fa-location-dot cards_icon"></i><p class="address">Bansal Hospital, C - Sector, Shahpura Bhopal, M.P. 462016, India</p></div>
+                  <div class="hospital_helpline detail"><i class="fa-solid fa-phone cards_icon"></i><p class="helpline_no">0755-4086099</p></div>
+                  <div class="hospital_contact detail"><i class="fa-solid fa-envelope cards_icon"></i><p class="helpline_email">contact@bansalhospital.net</p></div>
+                  <div class="contact_button"><a href="/bansal" class="details_button">more details</a></div>
+                </div>
+            </div>
+            <div class="swiper-slide card">
+                <div class="img_hospital">
+                  <img src="/images/imagesTrayel/imagesTrayel/hamidia hospital.jpg " alt="hospital 1 ">
+                </div>
+                <div class="hospital_details">
+                  <h2 class="hospital_name">Hamidia Hospital Bhopal</h2>
+                  <div class="hospital_address detail"><i class="fa-solid fa-location-dot cards_icon"></i><p class="address">Sultania Rd, near Hamidia Hospital, Royal Market, Medical College Campus, Koh-e-fiza, Bhopal, Madhya Pradesh 462001</p></div>
+                  <div class="hospital_helpline detail"><i class="fa-solid fa-phone cards_icon"></i><p class="helpline_no">0755-2540590</p></div>
+                  <div class="hospital_contact detail"><i class="fa-solid fa-envelope cards_icon"></i><p class="helpline_email">deangmc_bpl@yahoo.co.in</p></div>
+                  <div class="contact_button"><a href="#" class="details_button">more details</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================== Frequently Ask Question ==================================== -->
+<section>
+    <div class="faq">
+        <div class="faq_content">
+            <div class="details_content faq_heading">
+                <h1 >Frequently Asked Questions</h1>
+            </div>
+            <div class="faq-container">
+                <div class="question" onclick="toggleAnswer(1)">How do I schedule a virtual appointment? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer1">You can easily schedule a virtual appointment by logging into your patient portal account and selecting the option to schedule an appointment.</div>
+            
+                <div class="question" onclick="toggleAnswer(2)">What technology do I need for a virtual appointment? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer2">All you need is a stable internet connection and a device such as a smartphone, tablet, or computer with a webcam and microphone.</div>
+            
+                <div class="question" onclick="toggleAnswer(3)">How do I access my medical records online? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer3">Accessing your medical records is simple. Just log in to your patient portal account and navigate to the "Medical Records" section. From there, you can view and download your health information securely.</div>
+
+                <div class="question" onclick="toggleAnswer(4)">Can I refill my prescriptions online? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer4">Yes, you can request prescription refills through our virtual platform. Log in to your patient portal account, go to the "Prescriptions" section, and follow the prompts to submit your refill request. Our healthcare providers will review your request and process it accordingly.</div>
+            
+                <div class="question" onclick="toggleAnswer(5)">Is my telehealth appointment secure and private? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer5">Absolutely. We prioritize the security and privacy of your healthcare information. Our telehealth platform complies with industry standards for data encryption and confidentiality. Rest assured that your virtual appointments are conducted in a secure and confidential manner.</div>
+            
+                <div class="question" onclick="toggleAnswer(6)">What should I do in case of technical difficulties during my virtual appointment? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer6">Absolutely. We prioritize the security and privacy of your healthcare information. </div>
+
+                <div class="question" onclick="toggleAnswer(7)">How do I pay for virtual healthcare services? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer7">You can conveniently pay for virtual healthcare services using various payment methods, including credit/debit cards, UPI.</div>
+            
+                <div class="question" onclick="toggleAnswer(8)">Can I consult with specialists through virtual appointments? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer8">To prepare for your virtual appointment, ensure that you have a quiet and private space for the consultation. Make a list of any symptoms, questions, or concerns you want to discuss with your healthcare provider. Also, have your medical history and any relevant documents ready for reference.</div>
+            
+                <div class="question" onclick="toggleAnswer(9)">What if I need urgent medical attention? <i class="fa-solid fa-angle-down faq_icon"></i></div>
+                <div class="answer" id="answer9">If you require urgent medical attention, please call emergency services immediately or visit the nearest emergency room. </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+</section>
+<!-- ====================== search ================= -->
+   
+
+ 
+
+
+   

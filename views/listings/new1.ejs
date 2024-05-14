@@ -1,0 +1,126 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+        <br/> <br/>
+    <h3>Add Your Self</h3>
+    <form method="POST" action="/listings"  novalidate class="needs-validation"
+     enctype="multipart/form-data">
+    
+   <!-- ==================== FOR Name ========================== -->
+        <div class="mb-3">   
+            <label for="doctorname" class="form-lable">Name</label>
+            <input type="text" placeholder="Enter Your Name" name="listing[doctorname]" 
+            class="form-control"
+             required 
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+        </div>
+        <!-- ==================== FOR specialist ========================== -->
+        <div class="row">
+        <div class="mb-3 col-md-4">   
+            <label for="specialist" class="form-lable">Specialist</label>
+            <input type="text" placeholder="Enter Your Specialization" name="listing[specialist]" required
+            class="form-control" 
+             required
+            />
+            <div class="invalid-feedback">
+              Please enter a Specialization
+            </div>
+          </div>
+          <div class="mb-3 col-md-8">
+            <label for="mobile_no" class="form-lable">Mobile No.</label>
+            <input type="number" placeholder="Enter Your Number" name="listing[mobile_no]" required
+            class="form-control" 
+             required
+            />
+            <div class="invalid-feedback">
+              Please enter your mobile number
+            </div>
+          </div>
+        </div>
+        <!-- ==================== FOR IMAGES =============================== -->
+          <div class="mb-3">
+            <label for="image" class="form-lable">Upload Image</label>
+            <input type="file"  name="listing[image]"  required
+            class="form-control"/>
+          </div>
+
+          <div class="row">
+        <!-- =================== FOR experience ================================= -->
+          <div class="mb-3 col-md-4" >
+            <label for="experience" class="form-lable">Experience</label>
+            <input  placeholder="5 Yrs" name="listing[experience]"  
+            class="form-control" 
+            required
+            />
+            <div class="invalid-feedback"> 
+              Experience should be valid.
+            </div>
+          </div>
+           <!-- =================== FOR LOCATION ================================= -->
+          <div class="mb-3 col-md-8">
+            <label for="location" class="form-lable">Location</label>
+            <input type="text" placeholder="Enter Your Location" name="listing[location]"  
+            class="form-control"
+            required
+            />
+            <div class="invalid-feedback"> 
+              Location should be valid.
+            </div>
+           
+          </div>
+    </div>
+    <div class="row">
+     <!-- =================== FOR State ================================= -->
+     <div class="mb-3 col-md-4">
+        <label for="state" class="form-lable">State</label>
+        <input type="text" placeholder="Enter Your State" name="listing[state]"  
+        class="form-control"
+        required 
+        />
+        <div class="invalid-feedback"> 
+          State should be valid.
+        </div>
+    </div>
+         <!-- =================== FOR COUNTRY ================================= -->
+         <div class="mb-3 col-md-8">
+            <label for="country" class="form-lable">Country</label>
+            <input type="text" placeholder="India" name="listing[country]"   
+            class="form-control"  
+            required />
+            <div class="invalid-feedback"> 
+              Country should be valid.
+            </div>
+        </div>
+      </div>
+          <button class="btn btn-dark btn-add mt-3 mb-3">Add</button>
+
+    </form>
+ </div>
+</div>
+</body>
+
+<!-- <body>
+    <h1>Add Your Self</h1>
+    <form method="POST" action="/listings">
+       <input name="listing[doctorname]" placeholder="Enter Your Name" type="text">
+       <br><br>
+       <input name="listing[specialist]" placeholder="Enter specialist" type="text">
+       <br><br>
+       <input name="listing[image]" placeholder="Enter image URl" >
+       <br><br>
+       <input name="listing[experience]" placeholder="Enter experience" type="number">
+       <br><br>
+       <input name="listing[state]" placeholder="Enter state" type="text">
+       <br><br>
+       <input name="listing[location]" placeholder="Enter location" type="text">
+       <br><br>
+       <input name="listing[country]" placeholder="Enter country" type="text">
+       <br> <br>
+       <button>Add</button>
+    </form>
+</body>
+</html> -->

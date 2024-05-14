@@ -1,0 +1,105 @@
+<% layout("/layouts/boilerplate") %> 
+    <section class="doctor_section">
+        <div class="doctor_container">
+            <div class="profile_header">
+                <div class="profile_img">
+                    <img src="<%= listing.image.url %>" alt="">
+                </div>
+                <div class="dr_detailsh">
+                    <div class="dr_name">
+                        <h5><%= listing.doctorname %></h5>
+                        <div class="verified_profile">
+                            <i class="fa-solid fa-check verify_icon"></i>
+                            <h6>verified profile</h6>
+                        </div>
+                    </div>
+                    <p class="qualification">M.B.B.S</p>
+                    <h5>Location</h5>
+                    <p class="passion_experience"><%= listing.location %>,<%= listing.state %> (<%= listing.country %>)</p>
+                    <p><i>Owned By: <%= listing.owner.username %></i></p>     
+                </div>
+                <a href="/talks" class="btn_appoinment">
+                    <p>Let's Talk Doctor</p>
+                </a>
+            </div>
+            <div class="profile_description">
+                <div class="dr_rating">
+                    <p>Overall Rating</p>
+                    <h2>4.7</h2>
+                    <div class="rating_stars">
+                        <i class=""></i>
+                        <i class="fa-solid fa-star star_iocn"></i>
+                        <i class="fa-solid fa-star star_iocn"></i>
+                        <i class="fa-solid fa-star star_iocn"></i>
+                        <i class="fa-solid fa-star star_iocn"></i>
+                        <i class="fa-solid fa-star-half-stroke rating_profile star_iocn"></i>
+                    </div>    
+                </div>
+                <div class="about_dr">
+                    <div class="personal_info">
+                        <h2>Doctor Profile</h2>
+                        <p><%= listing.doctorname %> <br>
+                            <%= listing.specialist %> <br>
+                           Experience : <%= listing.experience %> Yrs
+                        </p>
+                    </div>
+                    <div class="personal_info">
+                        <h2>Area of expertise</h2>
+                        <p>Internal medicine, Allergy Treatment, Vaccination/ Immunization, Viral Fever Treatment, Dressings, Fever Treatment, Cardiovascular disease, Healthians reports consultant</p>    
+                    </div>
+                    <div class="personal_info">
+                        <h2>Education</h2>
+                        <p>M.B.B.S</p>    
+                    </div>
+                </div>
+                <ul class="dr_specialization">
+                    <li>
+                        <div class="skills">
+                            <h4>Specialization</h4>
+                            <p><%= listing.specialist %></p>    
+                        </div>
+                        <i class="fa-solid fa-user-doctor dr_icon"></i>   
+                    </li>
+                    <li>
+                        <div class="language">
+                            <h4>Language Knowe</h4>
+                            <p>Hindi,English</p>    
+                        </div>
+                        <i class="fa-regular fa-comments dr_icon"></i>
+                    </li>
+                    <li>
+                        <div class="consultation">
+                            <h4>Consultation Fees:</h4>
+                            <p>₹Free</p>  
+                        </div>
+                        <i class="fa-solid fa-id-card dr_icon"></i>  
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </section>
+<!-- ================================= BUTTONS ================================== -->
+    <% if(currUser && currUser._id.equals(listing.owner._id)) { %>
+        <div class="btns">
+          <a href="/listings/<%= listing._id %>/Edit"
+           class="btn btn-dark col-1 card_button   edit-btn">Edit</a>
+      
+          <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+             <button class="btn btn-dark offset-5">Delete</button>
+         </form>
+        </div>
+        <% } %>
+
+        <!-- ====================== for map ==================== -->
+
+    <hr>
+    <div class="col-6 offset-3 mb-3">
+        <h3>where you'll be</h3>
+        <div id="map"></div>
+      </div>
+      <script>
+        const mapToken = "<%=process.env.MAP_TOKEN %>";
+        const listing = <%- JSON.stringify(listing) %>;
+    </script>
+
+  <script src="/js/map.js"></script>
