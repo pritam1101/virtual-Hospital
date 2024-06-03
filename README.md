@@ -50,7 +50,7 @@ Virtual Hospital platform that leverages technology to offer accessible basic di
  ## Doctor Lists
 ![Screenshot 2024-04-24 121636](https://github.com/pritam1101/virtual-Hospital/assets/159442297/d63ef786-365a-4bb3-a922-3d9118299db0)
 
-## Diffrent Catogary Of Doctors
+## Different Category Of Doctors
 ![Screenshot 2024-04-24 121854](https://github.com/pritam1101/virtual-Hospital/assets/159442297/9520f05d-633a-49d9-89da-d122d491d162)
 
 ## Locations
@@ -65,7 +65,7 @@ Virtual Hospital platform that leverages technology to offer accessible basic di
 ## Add Your Self
 ![Screenshot 2024-04-24 121454](https://github.com/pritam1101/virtual-Hospital/assets/159442297/43291bb3-6c0f-4a47-9e4e-a8a5e844560f)
 
-## For Virtual Consultancy
+## For Virtual Consultancy/Video Chat
 ![Screenshot 2024-04-24 140537](https://github.com/pritam1101/virtual-Hospital/assets/159442297/a8aeddf2-aabf-43bc-abaf-27f52366940c)
 
 
