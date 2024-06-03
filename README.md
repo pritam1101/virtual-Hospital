@@ -55,6 +55,8 @@ Virtual Hospital platform that leverages technology to offer accessible basic di
 ## Add Your Self
 ![Screenshot 2024-04-24 121454](https://github.com/pritam1101/virtual-Hospital/assets/159442297/43291bb3-6c0f-4a47-9e4e-a8a5e844560f)
 
+## For Virtual Consultancy
+![Screenshot 2024-04-24 140537](https://github.com/pritam1101/virtual-Hospital/assets/159442297/a8aeddf2-aabf-43bc-abaf-27f52366940c)
 
 
 
