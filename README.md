@@ -35,10 +35,10 @@ Virtual Hospital platform that leverages technology to offer accessible basic di
   - MongoDB
 
 # Database Images
-- Doctor Data
+
+### New Doctor Added Data
 ![Screenshot 2024-06-03 165814](https://github.com/pritam1101/virtual-Hospital/assets/159442297/626291f8-4f89-4c00-8e9b-e0154f63ff22)
 
-- User Data
 ![Screenshot 2024-06-03 165843](https://github.com/pritam1101/virtual-Hospital/assets/159442297/7fba2c61-847c-41bc-985a-b34254fdd88e)
 
 
