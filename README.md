@@ -47,7 +47,7 @@ Virtual Hospital platform that leverages technology to offer accessible basic di
 ![Screenshot 2024-04-24 123946](https://github.com/pritam1101/virtual-Hospital/assets/159442297/4f842162-eb96-447f-bdf3-cf7d5af9d28d)
 
 ## Doctor Profile
-![Screenshot 2024-04-24 123926](https://github.com/pritam1101/virtual-Hospital/assets/159442297/726e69af-deb1-4fca-845e-fc1cc2e4c0c2)
+![Screenshot 2024-06-03 165108](https://github.com/pritam1101/virtual-Hospital/assets/159442297/1dcf04bc-869b-448c-bb5e-a860381ff4b3)
 
 ## SignUp as a
 ![Screenshot 2024-04-24 123747](https://github.com/pritam1101/virtual-Hospital/assets/159442297/1edfadfd-08b4-42af-860b-807f4ef890c5)
